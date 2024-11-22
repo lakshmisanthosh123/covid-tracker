@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer,Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import { MapContainerProps } from "react-leaflet";
 const CustomTileLayer = TileLayer as React.FC<any>;
@@ -9,6 +9,7 @@ interface ExtendedMapContainerProps extends MapContainerProps {
   center: [number, number];
   zoom: number;
 }
+
 const MapView = (data:any) => {
   const [state, setState] = useState("");
   const [activeCases, setActiveCases] = useState();
@@ -16,9 +17,14 @@ const MapView = (data:any) => {
   const [deaths, setDeaths] = useState(0);
   const [lat, setlat] = useState(0);
   const [log, setlog] = useState(0);
-debugger
+  const [total, settotal] = useState(0);
+  const mapProps: ExtendedMapContainerProps = {
+    center: [20.5937, 78.9629], 
+    zoom: 13, 
+    style: { height: "100%", width: "100%" }, 
+  };
   useEffect(() => {
-    console.log(data.data[1])
+    console.log(data.data)
     data.data.forEach((value:any)=>{
       setState(data.data[0]);
       setActiveCases(data.data[1]);
@@ -26,24 +32,40 @@ debugger
       setDeaths(data.data[3]);
       setlat(data.data[4]);
       setlog(data.data[5]);
-      console.log(lat,log)
+      settotal(data.data[6]);
     })
     
   }, [data]);
-  const mapProps: ExtendedMapContainerProps = {
-    center: [lat, log], 
-    zoom: 13, 
-    style: { height: "100%", width: "100%" }, 
-  };
+ 
   return (
     <MapContainer {...mapProps}>
       <CustomTileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={[lat, log]}>
-        <Popup>A pretty popup</Popup>
-      </Marker>
+        <Marker
+          key={state}
+          position={[lat,log]}
+        >
+          
+        
+      
+          <Popup>
+            <h3>{state}</h3>
+            <p>
+              <strong>Total Cases:</strong> {total}
+            </p>
+            <p>
+              <strong>Active Cases:</strong> {activeCases}
+            </p>
+            <p>
+              <strong>Recovered:</strong> {recovered}
+            </p>
+            <p>
+              <strong>Deaths:</strong> {deaths}
+            </p>
+          </Popup>
+          </Marker>
     </MapContainer>
   );
 };

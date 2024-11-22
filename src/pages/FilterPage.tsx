@@ -17,6 +17,7 @@ const FilterPage = (state:any) => {
   console.log(statecovidData)
   statecovidData.forEach((item, index) =>{
     statedata.push(state=item[0])
+    console.log(item[1])
     Object.entries(item[1]).forEach(([key, value]) => {
      
       if (key === "activeCases") statedata.push(` ${value}`)
@@ -24,6 +25,8 @@ const FilterPage = (state:any) => {
       if (key === "deaths") statedata.push(`${value}`)
         if (key === "latitude") statedata.push(`${value}`)
           if (key === "longitude") statedata.push(`${value}`)
+      if (key === "totalCases") statedata.push(`${value}`)
+
     });
 
   } )
