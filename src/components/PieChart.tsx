@@ -3,7 +3,7 @@ import Plot from "react-plotly.js";
 
 
 const PieChart = (data:any) => {
-  debugger
+ 
   const [state, setState] = useState("");
   const [activeCases, setActiveCases] = useState();
   const [recovered, setRecovered] = useState(0);

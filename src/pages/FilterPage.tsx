@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from "react-redux";
 import { RootState, AppDispatch } from "../redux/store";
 import { fetchStateCovidData } from "../redux/actions/filterAction";
+import Header from "../components/Header";
 const FilterPage = (state:any) => {
   const [selectedData, setSelectedData] = useState("dataSet1");
   const location = useLocation();
@@ -17,7 +18,7 @@ const FilterPage = (state:any) => {
   console.log(statecovidData)
   statecovidData.forEach((item, index) =>{
     statedata.push(state=item[0])
-    console.log(item[1])
+    
     Object.entries(item[1]).forEach(([key, value]) => {
      
       if (key === "activeCases") statedata.push(` ${value}`)
@@ -39,13 +40,13 @@ const FilterPage = (state:any) => {
 
     // Change dataset based on the selected option
     switch (selectedValue) {
-      case 'dataSet1':
+      case 'pie':
         setSelectedData(e.target.value);
         break;
-      case 'dataSet2':
+      case 'bar':
         setSelectedData(e.target.value);
         break;
-      case 'dataSet3':
+      case 'map':
         setSelectedData(e.target.value);
         break;
       default:
@@ -55,16 +56,17 @@ const FilterPage = (state:any) => {
 
   return (
     <div>
+      <Header states={ []} />
         <select onChange={handleMenuChange}>
-        <option value="dataSet1">Dataset 1</option>
-        <option value="dataSet2">Dataset 2</option>
-        <option value="dataSet3">Dataset 3</option>
+        <option value="pie">Pie Chart</option>
+        <option value="bar">Bar Chart</option>
+        <option value="map">Map View</option>
       </select>
-      {selectedData==="dataSet1"?
+      {selectedData==="pie"?
       <PieChart data={statedata}/>
-      :selectedData==="dataSet2"?
+      :selectedData==="bar"?
           <LineChart data={statedata} />
-          :selectedData==="dataSet3"?
+          :selectedData==="map"?
           <MapView data={statedata}/>:null }
     </div>
   );
