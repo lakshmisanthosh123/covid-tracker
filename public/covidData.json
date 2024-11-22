@@ -1,0 +1,226 @@
+{
+  "Andhra Pradesh": {
+    "totalCases": 2415457,
+    "activeCases": 18015,
+    "recovered": 2398821,
+    "deaths": 2521,
+    "latitude": 16.5060,
+    "longitude": 80.6480
+  },
+  "Arunachal Pradesh": {
+    "totalCases": 54860,
+    "activeCases": 442,
+    "recovered": 54415,
+    "deaths": 3,
+    "latitude": 27.0789,
+    "longitude": 93.6177
+  },
+  "Assam": {
+    "totalCases": 736162,
+    "activeCases": 6121,
+    "recovered": 729928,
+    "deaths": 2133,
+    "latitude": 26.1445,
+    "longitude": 91.7362
+  },
+  "Bihar": {
+    "totalCases": 796782,
+    "activeCases": 12568,
+    "recovered": 782914,
+    "deaths": 2300,
+    "latitude": 25.5941,
+    "longitude": 85.1376
+  },
+  "Chhattisgarh": {
+    "totalCases": 1000542,
+    "activeCases": 4574,
+    "recovered": 994064,
+    "deaths": 3504,
+    "latitude": 21.2514,
+    "longitude": 81.6296
+  },
+  "Goa": {
+    "totalCases": 222575,
+    "activeCases": 1718,
+    "recovered": 220407,
+    "deaths": 450,
+    "latitude": 15.2993,
+    "longitude": 74.1240
+  },
+  "Gujarat": {
+    "totalCases": 1202852,
+    "activeCases": 10829,
+    "recovered": 1181578,
+    "deaths": 2145,
+    "latitude": 23.2156,
+    "longitude": 72.6369
+  },
+  "Haryana": {
+    "totalCases": 1000835,
+    "activeCases": 7465,
+    "recovered": 994426,
+    "deaths": 9444,
+    "latitude": 30.7333,
+    "longitude": 76.7794
+  },
+  "Himachal Pradesh": {
+    "totalCases": 303905,
+    "activeCases": 3998,
+    "recovered": 299801,
+    "deaths": 1106,
+    "latitude": 31.1048,
+    "longitude": 77.1700
+  },
+  "Jharkhand": {
+    "totalCases": 434403,
+    "activeCases": 5829,
+    "recovered": 426028,
+    "deaths": 556,
+    "latitude": 23.3441,
+    "longitude": 85.3096
+  },
+  "Karnataka": {
+    "totalCases": 3996242,
+    "activeCases": 28822,
+    "recovered": 3967790,
+    "deaths": 33155,
+    "latitude": 12.9716,
+    "longitude": 77.5946
+  },
+  "Kerala": {
+    "totalCases": 5554157,
+    "activeCases": 23561,
+    "recovered": 5502927,
+    "deaths": 4270,
+    "latitude": 8.5241,
+    "longitude": 76.9366
+  },
+  "Madhya Pradesh": {
+    "totalCases": 1011296,
+    "activeCases": 6688,
+    "recovered": 1000323,
+    "deaths": 2255,
+    "latitude": 23.2599,
+    "longitude": 77.4126
+  },
+  "Maharashtra": {
+    "totalCases": 8771774,
+    "activeCases": 34020,
+    "recovered": 8700123,
+    "deaths": 147631,
+    "latitude": 19.0760,
+    "longitude": 72.8777
+  },
+  "Manipur": {
+    "totalCases": 148182,
+    "activeCases": 1094,
+    "recovered": 146318,
+    "deaths": 770,
+    "latitude": 24.8170,
+    "longitude": 93.9368
+  },
+  "Meghalaya": {
+    "totalCases": 93127,
+    "activeCases": 1506,
+    "recovered": 91405,
+    "deaths": 216,
+    "latitude": 25.5788,
+    "longitude": 91.8933
+  },
+  "Mizoram": {
+    "totalCases": 229933,
+    "activeCases": 1846,
+    "recovered": 227301,
+    "deaths": 785,
+    "latitude": 23.1645,
+    "longitude": 92.9376
+  },
+  "Nagaland": {
+    "totalCases": 35060,
+    "activeCases": 426,
+    "recovered": 34556,
+    "deaths": 78,
+    "latitude": 25.6700,
+    "longitude": 94.1192
+  },
+  "Odisha": {
+    "totalCases": 1204102,
+    "activeCases": 6731,
+    "recovered": 1193009,
+    "deaths": 2833,
+    "latitude": 20.2961,
+    "longitude": 85.8189
+  },
+  "Punjab": {
+    "totalCases": 745227,
+    "activeCases": 3313,
+    "recovered": 738748,
+    "deaths": 4713,
+    "latitude": 30.7333,
+    "longitude": 76.7794
+  },
+  "Rajasthan": {
+    "totalCases": 1341406,
+    "activeCases": 10162,
+    "recovered": 1331053,
+    "deaths": 2391,
+    "latitude": 26.9124,
+    "longitude": 75.7873
+  },
+  "Sikkim": {
+    "totalCases": 40783,
+    "activeCases": 547,
+    "recovered": 40216,
+    "deaths": 20,
+    "latitude": 27.3389,
+    "longitude": 88.6065
+  },
+  "Tamil Nadu": {
+    "totalCases": 3494736,
+    "activeCases": 13943,
+    "recovered": 3472743,
+    "deaths": 36717,
+    "latitude": 13.0827,
+    "longitude": 80.2707
+  },
+  "Telangana": {
+    "totalCases": 806845,
+    "activeCases": 5292,
+    "recovered": 798551,
+    "deaths": 3002,
+    "latitude": 17.3850,
+    "longitude": 78.4867
+  },
+  "Tripura": {
+    "totalCases": 118951,
+    "activeCases": 799,
+    "recovered": 118056,
+    "deaths": 96,
+    "latitude": 23.8315,
+    "longitude": 91.2868
+  },
+  "Uttar Pradesh": {
+    "totalCases": 2042625,
+    "activeCases": 24198,
+    "recovered": 2024284,
+    "deaths": 21643,
+    "latitude": 26.8467,
+    "longitude": 80.9462
+  },
+  "Uttarakhand": {
+    "totalCases": 434907,
+    "activeCases": 3109,
+    "recovered": 429592,
+    "deaths": 2166,
+    "latitude": 30.3165,
+    "longitude": 78.0322
+  },
+  "West Bengal": {
+    "totalCases": 2025033,
+    "activeCases": 13488,
+    "recovered": 2007240,
+    "deaths": 18260,
+    "latitude": 22.5726,
+    "longitude": 88.3639
+  }
+}
